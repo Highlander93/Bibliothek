@@ -1,0 +1,35 @@
+CREATE TABLE IF NOT EXISTS Medium (
+    medium_id SERIAL NOT NULL PRIMARY KEY,
+    Anzahl INT NOT NULL,
+    Titel VARCHAR (255) NOT NULL,
+    Autor VARCHAR (255) NOT NULL,
+    Erscheinungsdatum TIMESTAMP,
+    Digital BOOLEAN NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Arten (
+    arten_id SERIAL NOT NULL PRIMARY KEY,
+    Name VARCHAR (255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Ausleihung (
+    ausleihung_id SERIAL NOT NULL PRIMARY KEY,
+    medium_id SERIAL NOT NULL,
+    Ausleihungsdatum TIMESTAMP NOT NULL,
+    Name_Des_Ausleihers VARCHAR (255) NOT NULL,
+    CONSTRAINT fk_Medium
+        FOREIGN KEY(medium_id)
+            REFERENCES Medium(medium_id)
+);
+
+CREATE TABLE IF NOT EXISTS Zuordnung_Arten_Zu_Medium (
+    zuordnungs_id SERIAL NOT NULL PRIMARY KEY,
+    medium_id SERIAL NOT NULL,
+    arten_id SERIAL NOT NULL,
+    CONSTRAINT fk_Medium
+        FOREIGN KEY(medium_id)
+            REFERENCES Medium(medium_id),
+    CONSTRAINT fk_Arten
+        FOREIGN KEY(arten_id)
+            REFERENCES Arten(arten_id)
+);
