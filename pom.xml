@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.0.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>bibliothek</groupId>
 	<artifactId>bibliothek</artifactId>
@@ -15,8 +15,8 @@
 	<description>RestApi for Backend backend</description>
 	<properties>
 		<java.version>19</java.version>
-		<spring.boot.mainclass>Backend.BibliothekApplication</spring.boot.mainclass>
-		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+		<spring.boot.mainclass>Backend.BibliothekApplication</spring.boot.mainclass>  <!-- lookup parent from repository -->
+		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>  <!-- lookup parent from repository -->
 	</properties>
 	<dependencies>
 		<dependency>
