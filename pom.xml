@@ -15,6 +15,7 @@
 	<description>RestApi for Backend backend</description>
 	<properties>
 		<java.version>19</java.version>
+		<spring.boot.mainclass>Backend.BibliothekApplication</spring.boot.mainclass>
 	</properties>
 	<dependencies>
 		<dependency>
