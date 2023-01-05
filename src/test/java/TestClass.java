@@ -1,5 +1,8 @@
 import org.junit.jupiter.api.Test;
 
+/**
+ * Simple test class
+ */
 public class TestClass {
 
     @Test
