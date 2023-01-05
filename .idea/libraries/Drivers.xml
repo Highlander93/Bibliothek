@@ -1,10 +1,10 @@
 <component name="libraryTable">
-  <library name="drivers">
+  <library name="Drivers">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/drivers" />
+      <root url="file://C:/Program Files/PostgreSQL/Drivers" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
-    <jarDirectory url="file://$PROJECT_DIR$/drivers" recursive="false" />
+    <jarDirectory url="file://C:/Program Files/PostgreSQL/Drivers" recursive="false" />
   </library>
 </component>
