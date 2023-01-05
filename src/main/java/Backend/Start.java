@@ -16,6 +16,7 @@ public class Start {
             startConnectionDatabase();
         } catch (SQLException e) {
             System.err.println("Could not connect to db or create tables! Will abort further execution.");
+            e.printStackTrace();
             return;
         }
         startGUI();
